@@ -66,6 +66,7 @@ nlua_nvim_lsp.setup = function(nvim_lsp, config)
       Lua = {
         runtime = {
           version = "LuaJIT",
+          special =  config.special or {},
 
           -- TODO: Figure out how to get plugins here.
           -- path = vim.split(package.path, ';'),
